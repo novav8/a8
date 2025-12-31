@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> my web</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+	  /* Parallax Effect */
+        .parallax {
+            background-image: url('11.jpg');
+            background-attachment: fixed; /* Parallax effect */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; /* Full viewport height */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Content sections */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Smooth Scroll */
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Style for the navigation */
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        .navbar-nav li a {
+            color: #fff !important;
+        }
+
+        /* Icon Section */
+        .icon-box {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .icon-box i {
+            font-size: 3em;
+            color: #5bc0de;
+        }
+
+        .icon-box h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+</style>
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+<style>
+	body {
+  cursor: none; /* default cursor hide */
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+  width: 35px;
+  height: 35px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s ease-out;
+}
+
+
+</style>
+
+<script>
+const dot = document.querySelector('.cursor-dot');
+const outline = document.querySelector('.cursor-outline');
+
+window.addEventListener('mousemove', (e) => {
+  dot.style.left = e.clientX + 'px';
+  dot.style.top = e.clientY + 'px';
+
+  outline.style.left = e.clientX + 'px';
+  outline.style.top = e.clientY + 'px';
+});
+</script>
+<style>
+	
+a:hover ~ .cursor-outline {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Vulnera</a>
+   
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#section1">Home</a></li>
+      <li><a href="#section2">about</a></li>
+      <li><a href="#section3">portfolio</a></li>
+      <li><a href="#section4">contact </a></li>
+    </ul>
+  </div>
+</nav> </div>
+<div id="section1" class="parallax">
+	<div>
+		<h1> wlecome to my web page</h1>
+		<p> your tagline or introduction goes here</p>
+	</div>
+</div>
+
+<div id="section2" class="section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="icon-box">
+              <span class="glyphicon glyphicon-search" style="font-size: 30px;"></span>
+                <h3>Custom Solutions</h3>
+                <p>We provide custom solutions tailored to your needs.</p>
+            </div>
+            <div class="icon-box">
+               <span class="glyphicon glyphicon-bullhorn" style="font-size:30px"></span>
+                <h3>Dedicated Team</h3>
+                <p>Our team is committed to bringing your vision to life.</p>
+            </div>
+            <div class="icon-box">
+                <span class="glyphicon glyphicon-cloud-download" style="font-size: 30px"></span>
+                <h3>Cloud-Based</h3>
+                <p>We leverage cloud technology to enhance your business operations.</p>
+            </div>
+        </div>
+    </div>
+	<div id="section3" class="parallax">
+    <div class="container text-center">
+        <h1>Our Portfolio</h1>
+        <p>Showcase some of the work you've done or projects completed.</p>
+        <div class="row">
+            <!-- Portfolio Image 1 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="3.jpg" alt="Project 1" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 1 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 2 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="41.jpg" alt="Project 2" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 2 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 3 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="5.jpg" alt="Project 3" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 3 Description</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div id="section4" class="parallax">
+	<div class="container"		>
+<h1 style="padding-left: 10px;">forms</h1>
+<form> 
+<div class="container" class="form-group" >
+	<label>username</label>
+ <input type="text" name="username" class="form-control">
+</div>
+<div style="padding-left: 15px;">
+	<label>password</label>
+	<input type="password" name="password" class="form-control"> 
+</div> <br>
+<div class="form-group" style="padding-left: 15px;">
+      <label for="inputPassword">serial number</label>
+      <input class="form-control" id="disabledInput" type="text" disabled>
+    </div><br>
+<h2 style="padding-left: 15px;"> gender</h2>
+<div class="checkbox" >
+  <label><input type="radio" name="optradio">male</label>
+<br>
+  <label><input type="radio" name="optradio">female</label>
+</div>
+<div class="form-group">
+  <label for="comment">discription</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+	<button type="submit" class="btn btn-info">  submit</button>
+	</div>
+</div>
+
+</body>
+</html>

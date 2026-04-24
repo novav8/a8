@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+         <h2>AIM:- Design a webpage that makes use of </h2>
+        <h2>Table tags</h2>
+<textarea id="code1"rows="10" cols="80">CREATE TABLE employee (
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            background-color: #ffffff;
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Student Marks Report</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Roll No</th>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Marks</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Amit</td>
+                <td>78</td>
+                <td>85</td>
+                <td>80</td>
+                <td>243</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Neha</td>
+                <td>88</td>
+                <td>90</td>
+                <td>92</td>
+                <td>270</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Rahul</td>
+                <td>70</td>
+                <td>75</td>
+                <td>68</td>
+                <td>213</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+</textarea>
+<button onclick="copyCode('code1', this)">Copy</button>
+
+<br><br>
+<h2>Form Tags (forms with various form elements)</h2>
+<textarea id="code2"rows="10" cols="80">   
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100px;
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <form>
+        <h2>Student Registration Form</h2>
+
+        <!-- Text Field -->
+        <label>Full Name:</label>
+        <input type="text" name="name" placeholder="Enter your name">
+
+        <!-- Email -->
+        <label>Email ID:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <!-- Checkbox -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Music
+        <br><br>
+
+        <!-- Dropdown -->
+        <label>Course:</label>
+        <select>
+            <option>B.Sc IT</option>
+            <option>BCA</option>
+            <option>B.Com</option>
+            <option>BMS</option>
+        </select>
+
+        <!-- Textarea -->
+        <label>Address:</label>
+      <textarea rows="4" placeholder="Enter your address"></textare> 
+
+        <!-- File Upload -->
+        <label>Upload Photo:</label>
+        <input type="file">
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+  </body></html>   
+</textarea>
+<button onclick="copyCode('code2', this)">Copy</button>
+      
+<script>
+function copyCode(id, btn) {
+  let text = document.getElementById(id).value;
+
+  navigator.clipboard.writeText(text);
+
+  btn.innerText = "✅ Copied!";
+  
+  setTimeout(() => {
+    btn.innerText = "📋 Copy";
+  }, 2000);
+}
+</script>
+     <br> <br>
+          <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>

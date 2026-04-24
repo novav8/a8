@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+
+   <h2>AIM:- Implement jQuery- o Interactive Web Elements Using jQuery Events and selectors hosting projects on Google Sites.</h2>
+<textarea id="code1" rows="10" cols="80"><!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Click event
+    $("#btn1").click(function(){
+        $("#text").text("Button Clicked using jQuery!");
+    });
+
+    // Mouse over event
+    $("#box").mouseover(function(){
+        $(this).css("background-color","lightblue");
+    });
+
+    // Mouse out event
+    $("#box").mouseout(function(){
+        $(this).css("background-color","lightgray");
+    });
+
+});
+
+</script>
+
+<style>
+
+#box{
+width:200px;
+height:100px;
+background-color:lightgray;
+text-align:center;
+line-height:100px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Interactive Web Elements using jQuery</h2>
+
+<button id="btn1">Click Me</button>
+
+<p id="text">Original Text</p>
+
+<div id="box">Hover Over Me</div>
+
+</body>
+</html></textarea>
+<button onclick="copyCode('code1', this)">Copy</button>
+
+<br><br>
+<h2>B) jQuery Effects- Hide/Show, Fade, Slide, Animate, stop.</h2>
+<textarea id="code2" rows="10" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Effects Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Hide
+    $("#hide").click(function(){
+        $("#box").hide();
+    });
+
+    // Show
+    $("#show").click(function(){
+        $("#box").show();
+    });
+
+    // Fade
+    $("#fade").click(function(){
+        $("#box").fadeOut();
+    });
+
+    // Slide
+    $("#slide").click(function(){
+        $("#box").slideToggle();
+    });
+
+    // Animate
+    $("#animate").click(function(){
+        $("#box").animate({left:'200px'});
+    });
+
+    // Stop
+    $("#stop").click(function(){
+        $("#box").stop();
+    });
+
+});
+
+</script>
+
+<style>
+
+#box{
+width:150px;
+height:100px;
+background-color:lightblue;
+position:relative;
+margin-top:20px;
+text-align:center;
+line-height:100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>jQuery Effects Demo</h2>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fade">Fade</button>
+<button id="slide">Slide</button>
+<button id="animate">Animate</button>
+<button id="stop">Stop</button>
+
+<div id="box">Box</div>
+
+</body>
+</html></textarea>
+<button onclick="copyCode('code2', this)">Copy</button>
+
+<br><br>
+<h2>C) Get, Set, Add, Remove, CSS Classes in jQuery</h2>
+<textarea id="code3" rows="10" cols="80"><!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Classes Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Get text
+    $("#get").click(function(){
+        alert($("#text").text());
+    });
+
+    // Set text
+    $("#set").click(function(){
+        $("#text").text("Text changed using jQuery");
+    });
+
+    // Add CSS class
+    $("#add").click(function(){
+        $("#text").addClass("highlight");
+    });
+
+    // Remove CSS class
+    $("#remove").click(function(){
+        $("#text").removeClass("highlight");
+    });
+
+});
+
+</script>
+
+<style>
+
+.highlight{
+color:white;
+background-color:blue;
+font-size:20px;
+padding:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>jQuery Get, Set, Add, Remove CSS Classes</h2>
+
+<p id="text">This is a sample text</p>
+
+<button id="get">Get Text</button>
+<button id="set">Set Text</button>
+<button id="add">Add Class</button>
+<button id="remove">Remove Class</button>
+
+</body>
+</html></textarea>
+<button onclick="copyCode('code3', this)">Copy</button>
+
+<script>
+function copyCode(id, btn) {
+  let text = document.getElementById(id).value;
+
+  navigator.clipboard.writeText(text);
+
+  btn.innerText = "✅ Copied!";
+  
+  setTimeout(() => {
+    btn.innerText = "📋 Copy";
+  }, 2000);
+}
+</script>
+     <br> <br>
+          <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>

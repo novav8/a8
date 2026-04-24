@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> AIM:- 1) Design a webpage that makes use of</h2>
+
+<textarea id="code1" rows="10" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Structure Tags</title>
+</head>
+
+<body>
+
+    <h1>HTML Document Structure</h1>
+
+    <p>
+        This webpage demonstrates the use of basic HTML document structure tags.
+    </p>
+
+    <h2>Used Document Structure Tags</h2>
+
+    <ul>
+        <li>&lt;!DOCTYPE html&gt;</li>
+        <li>&lt;html&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;title&gt;</li>
+        <li>&lt;body&gt;</li>
+    </ul>
+
+</body>
+</html>    
+</textarea>
+<button onclick="copyCode('code1', this)">Copy</button>
+
+<br><br>
+<h2>b) Various Text Formatting Tags</h2>
+<textarea id="code2" rows="10" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Formatting Tags</title>
+</head>
+
+<body>
+
+    <h1>HTML Text Formatting Tags</h1>
+
+    <p><b>This text is bold using the b tag.</b></p>
+
+    <p><strong>This text is strong using the strong tag.</strong></p>
+
+    <p><i>This text is italic using the i tag.</i></p>
+
+    <p><em>This text is emphasized using the em tag.</em></p>
+
+    <p><u>This text is underlined using the u tag.</u></p>
+
+    <p><mark>This text is highlighted using the mark tag.</mark></p>
+
+    <p><small>This text is smaller using the small tag.</small></p>
+
+    <p><del>This text is deleted using the del tag.</del></p>
+
+    <p>
+        Chemical Formula: H<sub>2</sub>O <br>
+        Mathematical Expression: X<sup>2</sup> + Y<sup>2</sup>
+    </p>
+
+</body>
+</html>
+</textarea>
+<button onclick="copyCode('code2', this)">Copy</button>
+
+<script>
+function copyCode(id, btn) {
+  let text = document.getElementById(id).value;
+
+  navigator.clipboard.writeText(text);
+
+  btn.innerText = "✅ Copied!";
+  
+  setTimeout(() => {
+    btn.innerText = "📋 Copy";
+  }, 2000);
+}
+</script>
+     <br> <br>
+          <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</body>
+</html>

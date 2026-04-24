@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>AIM:-  Creating HTML5 Structured Web Page with Tables and Input Control Elements- </h2>
+          <h2>a) Use semantic HTML5 elements </h2>
+<textarea id="code1" rows="10" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Structured Page with Table and Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header, nav, main, section, footer {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        input, select {
+            padding: 5px;
+            width: 200px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Management Portal</h1>
+        <p>HTML5 Semantic Web Page Example</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Students</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section with Table -->
+        <section>
+            <h2>Student Details</h2>
+            <table>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Alice</td>
+                    <td>Computer Science</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Bob</td>
+                    <td>Information Technology</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section with Form -->
+        <section>
+            <h2>Register New Student</h2>
+            <form action="#" method="post">
+                <label for="roll">Roll Number:</label>
+                <input type="number" id="roll" name="roll" required>
+
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Electronics</option>
+                    <option>Mechanical</option>
+                </select>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" min="1" max="4" required>
+
+                <br><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Portal | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+</textarea>
+<button onclick="copyCode('code1', this)">Copy</button>
+
+<br><br>
+        <h2>b) Use form elements for user input.</h2>
+   <textarea id="code2" rows="10" cols="80">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Semantic Web Page with Table Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header, nav, main, section, footer {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        input, select {
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Student Information System</h1>
+    <p>HTML5 Semantic Web Page with Table Update</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Student Details</h2>
+
+        <table id="studentTable">
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Alice</td>
+                <td>Computer Science</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Student Registration Form</h2>
+
+        <form onsubmit="addStudent(); return false;">
+            <label>Roll No:</label><br>
+            <input type="number" id="roll" required><br><br>
+
+            <label>Student Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label>Course:</label><br>
+            <select id="course">
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+            </select><br><br>
+
+            <label>Year:</label><br>
+            <input type="number" id="year" min="1" max="4" required><br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Student Portal | All Rights Reserved</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function addStudent() {
+        let roll = document.getElementById("roll").value;
+        let name = document.getElementById("name").value;
+        let course = document.getElementById("course").value;
+        let year = document.getElementById("year").value;
+
+        let table = document.getElementById("studentTable");
+        let newRow = table.insertRow();
+
+        newRow.insertCell(0).innerHTML = roll;
+        newRow.insertCell(1).innerHTML = name;
+        newRow.insertCell(2).innerHTML = course;
+        newRow.insertCell(3).innerHTML = year;
+
+        // Clear form after submission
+        document.querySelector("form").reset();
+    }
+</script>
+
+</body>
+</html>
+</textarea>
+<button onclick="copyCode('code2', this)">Copy</button>
+
+<br><br>
+        
+<script>
+function copyCode(id, btn) {
+  let text = document.getElementById(id).value;
+
+  navigator.clipboard.writeText(text);
+
+  btn.innerText = "✅ Copied!";
+  
+  setTimeout(() => {
+    btn.innerText = "📋 Copy";
+  }, 2000);
+}
+</script>
+     <br> <br>
+          <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>
